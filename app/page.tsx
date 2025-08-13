@@ -30,7 +30,7 @@ export default function Home() {
               </div>
             </div>
             <h1 className="md:text-7xl my-4 font-extrabold text-4xl md:leading-tight">
-              A blackbox recorder for your infrastructure!
+              A blackbox recorder for your infrastructure
             </h1>
             <p className="mx-auto my-4 text-sm w-full max-w-xl text-center font-medium leading-relaxed tracking-wide">
               RootScope turns real system activity into a shareable timeline so
