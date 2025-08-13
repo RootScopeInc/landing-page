@@ -1,6 +1,7 @@
 import { ThemeChanger } from "@/app/Theme-changer";
 import { Button } from "@/components/ui/button";
 import { navLinks } from "@/data/navLinks";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -20,7 +21,16 @@ const Navbar = () => {
 
         <div className="flex flex-row justify-end space-x-2">
           <ThemeChanger />
-          <Button>Get Started</Button>
+          <Button asChild>
+            <Link
+              href="https://github.com/rootscope/rootscope"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center"
+            >
+              <GitHubLogoIcon className="w-4 h-4 mr-2" /> Get Started
+            </Link>
+          </Button>
         </div>
       </div>
     </nav>
