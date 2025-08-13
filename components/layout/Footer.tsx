@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { GITHUB_REPO_URL } from "@/data/constants";
 import { footerLinks } from "@/data/footerLinks";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
@@ -15,7 +16,7 @@ const Footer = () => {
           <div className="items-center gap-x-3 space-y-3 sm:flex sm:justify-center sm:space-y-0">
             <Button asChild>
               <Link
-                href="https://github.com/rootscope/rootscope"
+                href={GITHUB_REPO_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center"

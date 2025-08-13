@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { GITHUB_REPO_URL } from "@/data/constants";
 import { features } from "@/data/features";
 import { ArrowRightIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
@@ -39,7 +40,7 @@ export default function Home() {
             <div className="flex flex-row justify-center items-center space-x-4 my-8">
               <Button asChild>
                 <Link
-                  href="https://github.com/rootscope/rootscope"
+                  href={GITHUB_REPO_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center"
