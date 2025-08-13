@@ -27,7 +27,7 @@ FROM socialengine/nginx-spa:latest
 WORKDIR /app
 
 # Copy built React app from builder stage
-COPY --from=builder /app/dist /app
+COPY --from=builder /app/.next /app
 
 # Expose port 80 for serving the frontend
 EXPOSE 80
