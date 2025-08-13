@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { features } from "@/data/features";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { ArrowRightIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -37,8 +37,19 @@ export default function Home() {
               guesswork.
             </p>
             <div className="flex flex-row justify-center items-center space-x-4 my-8">
-              <Button>Get Started</Button>
-              <Button variant="secondary">Learn More</Button>
+              <Button asChild>
+                <Link
+                  href="https://github.com/rootscope/rootscope"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center"
+                >
+                  <GitHubLogoIcon className="w-4 h-4 mr-2" /> Get Started
+                </Link>
+              </Button>
+              <Button variant="secondary" asChild>
+                <Link href="#features">Learn More</Link>
+              </Button>
             </div>
 
             <div className="absolute top-0 -z-10 max-h-full max-w-screen-lg w-full h-full blur-2xl">
@@ -104,6 +115,33 @@ export default function Home() {
           <div className="absolute bottom-0 right-0 w-1/2 h-56 bg-sky-600 rounded-full mix-blend-multiply opacity-70 animate-blob delay-1000 filter blur-3xl"></div>
         </div>
       </section>
+
+      {/* How it works */}
+      <div className="border-b border-border" id="how-it-works">
+        <main className="container mx-auto">
+          <div className="relative md:mt-24 mx-auto w-full max-w-4xl pt-4 text-center">
+            <h1 className="md:text-7xl my-4 font-extrabold text-4xl md:leading-tight">
+              See it in action
+            </h1>
+            <p className="mx-auto my-4 text-sm w-full max-w-xl text-center font-medium leading-relaxed tracking-wide">
+              Watch RootScope resolve a deleted‑file race: follow the process
+              chain, file I/O, and mounts to reconstruct the failure without a
+              repro.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-8">
+            <video
+              className="w-full rounded-lg border border-border"
+              playsInline
+              preload="metadata"
+              controls
+            >
+              <source src="/rootscope-demo.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </main>
+      </div>
 
       {/* Pricing */}
 
