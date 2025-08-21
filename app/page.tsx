@@ -30,10 +30,10 @@ export default function Home() {
               </div>
             </div>
             <h1 className="md:text-7xl my-4 font-extrabold text-4xl md:leading-tight">
-              A blackbox recorder for your infrastructure
+              Your system black box — for when logs aren't enough
             </h1>
             <p className="mx-auto my-4 text-sm w-full max-w-xl text-center font-medium leading-relaxed tracking-wide">
-              RootScope turns real system activity into a shareable timeline so
+              RootScope turns real system activity into a searchable timeline so
               you can see what changed, by whom, and when — no repro, no
               guesswork.
             </p>
@@ -83,13 +83,14 @@ export default function Home() {
           <div className="my-24">
             <h5 className="text-primary">Why RootScope?</h5>
             <h2 className="text-4xl font-extrabold my-4">
-              Built for kernel, embedded, and reliability engineers
+              Built for reliability engineers, infrastructure engineers, and
+              kernel developers
             </h2>
 
             <p className="mx-auto my-4 text-sm w-full max-w-md bg-transparent text-center font-medium leading-relaxed tracking-wide text-muted-foreground">
-              Pinpoint cause and effect in production: trace pre‑crash activity,
-              follow process chains, and audit file, mount, and device changes —
-              without reproducing the bug.
+              Pinpoint root cause in staging or production. Trace pre-crash
+              activity, full process chains, and correlate changes across files,
+              mounts, and devices — without reproducing the bug.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4 mt-12">

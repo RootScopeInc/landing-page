@@ -4,11 +4,11 @@ export const features = [
   {
     title: "Kernel-level capture, black-box replay",
     description:
-      "Record syscalls and critical system events directly from Linux and replay what actually happened — even when logs are missing, rotated, or incomplete.",
+      "Record file system, mounts, and devices directly from the kernel and replay what actually happened — even when logs are missing, rotated, or never written.",
     icon: <Cpu className="w-6 h-6" />,
   },
   {
-    title: "Searchable, millisecond-accurate timeline",
+    title: "Searchable, accurate timeline",
     description:
       "Trace the exact chain of processes, file I/O, mounts, and device changes leading to a failure with a fast, queryable timeline.",
     icon: <History className="w-6 h-6" />,
