@@ -10,7 +10,6 @@ import {
 import { GITHUB_REPO_URL } from "@/data/constants";
 import { features } from "@/data/features";
 import { ArrowRightIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -61,14 +60,16 @@ export default function Home() {
           </div>
 
           <div className="max-w-4xl mx-auto mb-8">
-            <Image
-              className="w-full"
-              src="/dashboard-ui.png"
-              alt="Dashboard ui design"
-              priority
-              width={1200}
-              height={800}
-            />
+            <video
+              className="w-full rounded-lg border border-border"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+            >
+              <source src="/rootscope-banner.mp4" type="video/mp4" />
+            </video>
           </div>
         </main>
       </div>
@@ -83,8 +84,7 @@ export default function Home() {
           <div className="my-24">
             <h5 className="text-primary">Why RootScope?</h5>
             <h2 className="text-4xl font-extrabold my-4">
-              Built for reliability engineers, infrastructure engineers, and
-              kernel developers
+              Built for reliability engineers and infrastructure engineers
             </h2>
 
             <p className="mx-auto my-4 text-sm w-full max-w-md bg-transparent text-center font-medium leading-relaxed tracking-wide text-muted-foreground">
