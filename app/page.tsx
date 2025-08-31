@@ -66,6 +66,7 @@ export default function Home() {
               loop
               muted
               playsInline
+              controls
               preload="metadata"
             >
               <source src="/rootscope-banner.mp4" type="video/mp4" />
