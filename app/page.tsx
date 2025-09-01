@@ -69,7 +69,7 @@ export default function Home() {
               controls
               preload="auto"
             >
-              <source src="/rootscope-banner.mp4" type="video/mp4" />
+              <source src="/rootscope-banner-new.mp4" type="video/mp4" />
             </video>
           </div>
         </main>
