@@ -1,6 +1,6 @@
 import { ThemeChanger } from "@/app/Theme-changer";
 import { Button } from "@/components/ui/button";
-import { GITHUB_REPO_URL } from "@/data/constants";
+import { GET_STARTED_URL } from "@/data/constants";
 import { navLinks } from "@/data/navLinks";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
@@ -24,7 +24,7 @@ const Navbar = () => {
           <ThemeChanger />
           <Button asChild>
             <Link
-              href={GITHUB_REPO_URL}
+              href={GET_STARTED_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center"
