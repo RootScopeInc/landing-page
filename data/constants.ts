@@ -1,1 +1,1 @@
-export const GET_STARTED_URL = "https://github.com/RootScopeInc/RootScope";
+export const GET_STARTED_URL = "https://docs.rootscope.io";

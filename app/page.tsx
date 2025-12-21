@@ -10,7 +10,7 @@ import {
 import { HeroVideo } from "@/components/ui/HeroVideo";
 import { GET_STARTED_URL } from "@/data/constants";
 import { features } from "@/data/features";
-import { ArrowRightIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import { ArrowRightIcon, FileTextIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
 export default function Home() {
@@ -45,7 +45,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center"
                 >
-                  <GitHubLogoIcon className="w-4 h-4 mr-2" /> Get Started
+                  <FileTextIcon className="w-4 h-4 mr-2" /> Get Started
                 </Link>
               </Button>
               <Button variant="secondary" asChild>

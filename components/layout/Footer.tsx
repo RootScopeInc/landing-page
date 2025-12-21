@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { GET_STARTED_URL } from "@/data/constants";
 import { footerLinks } from "@/data/footerLinks";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { FileTextIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
 const Footer = () => {
@@ -21,7 +21,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center"
               >
-                <GitHubLogoIcon className="w-4 h-4 mr-2" /> Get Started
+                <FileTextIcon className="w-4 h-4 mr-2" /> Get Started
               </Link>
             </Button>
             {/* <Button variant="secondary">Learn more</Button> */}
