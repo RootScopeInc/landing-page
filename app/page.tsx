@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { HeroVideo } from "@/components/ui/HeroVideo";
 import { GITHUB_REPO_URL } from "@/data/constants";
 import { features } from "@/data/features";
 import { ArrowRightIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
@@ -60,17 +61,7 @@ export default function Home() {
           </div>
 
           <div className="max-w-4xl mx-auto mb-8">
-            <video
-              className="w-full rounded-lg border border-border"
-              autoPlay
-              loop
-              muted
-              playsInline
-              // controls
-              preload="metadata"
-            >
-              <source src="/rootscope-banner-new.mp4" type="video/mp4" />
-            </video>
+            <HeroVideo />
           </div>
         </main>
       </div>
