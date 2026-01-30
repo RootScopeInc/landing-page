@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-10 py-10 border-t items-center justify-between sm:flex">
-          <p>© 2025 RootScope Inc. All rights reserved.</p>
+          {/* <p>© 2025 RootScope Inc. All rights reserved.</p> */}
           <Link href="mailto:support@rootscope.io">support@rootscope.io</Link>
           <ul className="flex flex-wrap items-center gap-4 mt-6 sm:text-sm sm:mt-0">
             {footerLinks.map((item) => (
